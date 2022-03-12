@@ -1,0 +1,12 @@
+<h1>Word Count : {{ len }} words in your text</h1>
+<a href="{% url 'home' %}">retart count</a>
+<h1>your words</h1>
+<form action="{% url 'count' %}">
+    <textarea cols="100" rows="10" name="fulltext"></textarea>
+    <br />
+    <input type="submit" value="count!" />
+
+
+<hr />
+
+{{ worddict }}
