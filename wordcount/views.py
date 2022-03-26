@@ -17,4 +17,7 @@ def countword(request):
     print(wordlist)
     print(sortedword)
 
-    return render(request, 'count.html', {"words":words, "len":len(wordlist), "worddict": worddict })
+    return render(request, 'count.html', {"words":words, "len":len(wordlist), "worddict": sortedword })
+
+def about(request):
+    return render(request, "about.html")
